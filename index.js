@@ -59,5 +59,3 @@ app.get('/debug/:universeId', async (req, res) => {
 app.listen(3000, () => {
     console.log('Proxy démarré sur le port 3000');
 });
-
-https://TON-APP.onrender.com/
