@@ -31,7 +31,7 @@ app.get('/universes/:placeId', async (req, res) => {
 });
 
 app.get('/debug/:universeId', async (req, res) => {
-    const { universeId } = req.params;
+    const { 3808734295 } = req.params;
     
     const urls = [
         `https://games.roblox.com/v1/games/${universeId}/game-passes?limit=100&sortOrder=Asc`,
