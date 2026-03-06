@@ -2,6 +2,10 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 
+app.get('/', (req, res) => {
+    res.json({ status: 'ok', message: 'Proxy Roblox opérationnel !' });
+});
+
 app.get('/gamepasses/:universeId', async (req, res) => {
     const { universeId } = req.params;
     const cursor = req.query.cursor || "";
@@ -52,4 +56,8 @@ app.get('/debug/:universeId', async (req, res) => {
     res.json(results)
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log('Proxy démarré sur le port 3000');
+});
+
+https://TON-APP.onrender.com/
